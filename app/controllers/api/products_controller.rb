@@ -11,8 +11,8 @@ class Api::ProductsController < ApplicationController
     render json: Product.get_categories
   end
 
-  # def by_category
-  #   render json: Product.by_category(params[:category])
-  # end
+  def by_category
+    render json: Product.by_category(params[:category])
+  end
 
 end
