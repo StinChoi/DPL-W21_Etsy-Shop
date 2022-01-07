@@ -32,12 +32,12 @@ const NavBar = () => {
         <div>
           <Link to="/categories">Categories</Link>
         </div>
-        <div>
+        {/* <div>
           <Link to="/public">Public</Link>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Link to="/protected">User Profile</Link>
-        </div>
+        </div> */}
         {renderAuthLinks()}
         <div style={styles.pageContainer}>
           <Outlet />

@@ -16,8 +16,8 @@ function App() {
       <Route element={<Layout />}>
         {/* Public Routes */}
         <Route path="/" element={<Home />} />
-        <Route path="/public" element={<Public />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/public" element={<Public />} /> */}
+        {/* <Route path="/register" element={<Register />} /> */}
         <Route path="/login" element={<Login />} />
         <Route exact path="/product" element={<ProductsFromSeller />} />
         <Route exact path="/categories" element={<Categories />} />
