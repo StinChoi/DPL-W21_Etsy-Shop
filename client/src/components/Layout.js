@@ -30,7 +30,10 @@ const Layout = () => {
           <Link to="/product">Product From Seller</Link>
         </div>
         <div>
-          <Link to="/categories">Categories</Link>
+          <Link to="/category">Category</Link>
+        </div>
+        <div>
+          <Link to="/find">Find Products</Link>
         </div>
         {/* <div>
           <Link to="/public">Public</Link>

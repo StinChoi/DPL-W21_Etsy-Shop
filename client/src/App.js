@@ -9,6 +9,7 @@ import Public from './pages/Public';
 import Register from './pages/Register';
 import ProductsFromSeller from './pages/ProductsFromSeller';
 import Category from './pages/Category';
+import FindProduct from './pages/FindProduct';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route exact path="/product" element={<ProductsFromSeller />} />
         <Route exact path="/category" element={<Category />} />
+        <Route path="/find" element={<FindProduct/>} /> 
         <Route element={<RequireAuth />}>
           {/* Protected Routes */}
           <Route path="/protected" element={<Protected />} />

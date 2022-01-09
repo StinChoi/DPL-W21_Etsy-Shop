@@ -52,7 +52,7 @@ const ProductsFromSeller = () => {
       let normalizedData = normalizeData(res.data)
       setSellerProducts(normalizedData)
     } catch (error) {
-      alert('Error has occured, get Seller Products')
+      alert('Error has occured while getting products')
     }
   }
   const renderSellerProducts = () => {
@@ -79,3 +79,4 @@ const ProductsFromSeller = () => {
 }
 
 export default ProductsFromSeller;
+
