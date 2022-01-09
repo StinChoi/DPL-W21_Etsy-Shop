@@ -2,7 +2,7 @@ import { Col, Row, Select } from 'antd';
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import ProductCard from '../components/ProductCard';
-const { Option } = Select;
+const { Option } = "antd/lib/mentions";
 
 const Categories = () => {
   const [categories, setCategories] = useState(null)
@@ -21,7 +21,7 @@ const Categories = () => {
   }
   const handleChange = async (value) => {
     try {
-      let res = await axios.get('/api/cities/${value}')
+      let res = await axios.get('/api/categories/${value}')
       setCategoryProducts(res.data)
     } catch (err) {
       alert('err in handleChange')
@@ -63,7 +63,7 @@ const Categories = () => {
   }
   return (
     <div>
-      <h1>Categories</h1>
+      <h1>Search Categories</h1>
       {renderSelect()}
       {renderCategory()}
     </div>
