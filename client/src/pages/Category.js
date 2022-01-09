@@ -30,7 +30,7 @@ const Category = () => {
     try {
 
       setCategoryProducts(value);
-      let res = await axios.get('/api/get_categories/${value}');
+      let res = await axios.get(`/api/get_categories/${value}`);
       setProducts(res.data);
     } catch (err) {
       console.log(err.response);
